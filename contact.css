@@ -1,0 +1,30 @@
+.contact-content{
+    height: 80vh;
+    margin-top: 30px;
+    padding: 9px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contact-content::after{
+    content: "";
+    background-image: url("../img/blogger.svg");
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.contact-form{
+    font-size: 18px;
+}
+
+.form-box input, textarea{
+    width: 35 vw;
+    padding: 10px 6px;
+    margin: 7px 0px;
+}

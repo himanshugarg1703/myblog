@@ -1,0 +1,10 @@
+@media screen and (max-width: 1200 px){
+    .content-right{
+        display: none;
+    }
+}
+
+.filter_by_year{
+    margin: 0;
+    padding: 0;
+}

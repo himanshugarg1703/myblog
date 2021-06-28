@@ -1,0 +1,181 @@
+/*
+ Add a black background color to the top navigation 
+.navbar {
+    background-color: black;
+    overflow: scroll;
+    border-style: none;
+    margin-bottom: 50px;
+  }
+  
+ Style the links inside the navigation bar 
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border-style: none;
+    margin-right: 50px;
+}
+  
+Change the color of links on hover 
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+  
+Add a color to the active/current link
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+*/
+
+
+
+
+/* Removes the white spacing outside the navigation */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    font-family: var(--font1);
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left{
+    font-size: 20px;
+    display: flex;
+}
+
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    font-size: 18px;
+}
+
+.nav-left ul li{
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+}
+
+.nav-left ul li:hover{
+    color: green;
+    font-weight: bolder;
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ul li a:hover{
+    color: green;
+    font-weight: bolder;
+}
+
+.nav-left ul li a:hover{
+    color: blue;
+}
+
+.content{
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.content::after{
+    content: "";
+    background-image: url('../img/home.svg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+}
+
+.content-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font2);
+    flex-direction: column;
+    padding: 40px;
+    z-index: 1;
+}
+
+.content-left h1{
+    font-weight: bolder;
+    font-family: var(--font2);
+}
+
+.content-left p{
+    font-family: var(--font2);
+}
+
+.content-right{
+    font-family: var(--font2);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img{
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+.blogs{
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.filter_by_year{
+    position: absolute;
+    top: 0px;
+    left: 80vw;
+}
+
+.blog{
+    display: flex;
+    padding: 15px;
+}
+
+.blog img{
+    width: 300px;
+}
+
+.blog-content{
+    align-self: center;
+    margin: 20px;
+}
+
+.blog-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    height: 50px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.footer a{
+    color: white;
+}
